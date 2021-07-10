@@ -10,112 +10,104 @@
 </head>
 
 <body>
-  <nav>
-    <h1 class="nav-logo">My Company</h1>
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Serviços</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">FAQ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contato</a>
-      </li>
-    </ul>
-  </nav>
+  <header class="header">
+        <div  class="header__box">
+
+            <h1 class="header__box-logo">My Company</h1>
+            <ul class="header__box-content">
+              <li class="header__box-content-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="header__box-content-item">
+                <a href="#">Serviços</a>
+              </li>
+              <li class="header__box-content-item">
+                <a href="#">FAQ</a>
+              </li>
+              <li class="header__box-content-item">
+                <a href="#">Contato</a>
+              </li>
+            </ul>
+        </div>
+        
+ 
+   
+  </header>
 
   <main>
-    <header>
-      <h1 class="header-title">The road less traveled</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur fringilla turpis est, eget posuere libero pharetra a.
-        Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-        Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-        Nam congue luctus nisl, id finibus nisi cursus vitae
-      </p>
-      <img class="header-image" src="images/car.png" alt="car" />
-      <button type="button" class="call-to-action">Start my journey</button>
-    </header>
-    <section class="services">
-      <div>
-        <i class="far fa-calendar-alt"></i>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur fringilla turpis est, eget posuere libero pharetra a.
-          Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-          Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-          Nam congue luctus nisl, id finibus nisi cursus vitae
-        </p>
+    <div class="landing-top">
+      <div class="landing-top__image">
+          <img width="100%"  src="images/homeimg.jpg" alt="Carro Ilustrativo" />
       </div>
-      <div>
-        <img src="images/lock.png" alt="lock" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur fringilla turpis est, eget posuere libero pharetra a.
-          Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-          Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-          Nam congue luctus nisl, id finibus nisi cursus vitae
-        </p>
+      <div class="landing-top__content">
+          <h1 class="landing-top__content-title">The road less traveled</h1>
+          <p class="landing-top__content-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur fringilla turpis est, eget posuere libero pharetra a.
+            Curabitur vulputate daps magna. Integer vehicula tellus vel purus ultrices sagittis.
+            N sit amet erovitae ex mattis dignissim a nec libero.
+            Nam congue luctus nisl, id finibus nisi cursus vitae
+          </p>
+          <button type="button" class="button button--primary">Start my journey</button>
       </div>
-      <div>
-        <img src="images/like.png" alt="thumbs up" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur fringilla turpis est, eget posuere libero pharetra a.
-          Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-          Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-          Nam congue luctus nisl, id finibus nisi cursus vitae
-        </p>
+      
+     
+    
+    </div>
+    <section>
+      <div class="services_text-box">
+        <h2 class="services_text-box-title">Principais serviços</h2>
+        <h1 class="services_text-box-subtitle">Veja alguns de nossos serviços</h1>
       </div>
+      <div class="services_group">
+         <div class="services_group-item">
+         
+            <img src="images/services-fixing.png" alt="Reparos - imagem ilustrativa" />
+            <h1>Reparação</h1>
+            <button class="button button--secondary">Veja mais</button>
+         </div>
+         <div class="services_group-item">
+
+          <img src="images/services-sales.png" alt="Venda de carros - imagem ilustrativa" />
+          <h1>Venda de automóveis</h1>
+          <button class="button button--secondary">Veja mais</button>
+        </div>
+        <div class="services_group-item">
+
+          <img src="images/services-paint.png" alt="Pintura automotiva - imagem ilustrativa" />
+          <h1>Pintura</h1>
+          
+          <button class="button button--secondary">Veja mais</button>
+        </div>
+ 
+      
+      <div>
+      <div class="testimonial">
+        <div class="testimonial__card">
+          <div  class="testimonial__card-text">
+            I was struggling to find the right solution, 
+            and once MyCompany came along, I knew all my troubles would go away.
+            <i class="fas fa-quote-right quote"></i>
+          </div>
+          <div class="testimonial__card-footer">
+            <div class="testimonial__card-img">
+               
+            </div>
+            <h5 class="testimonial__card-name"></h5>
+          </div>
+
+        </div>
+      </div>
+
+        
+    
     </section>
-    <section class="testimonials">
-      <h1>Testimonials</h1>
-      <article>
-        <img src="images/guy1.jpg" alt="guy" />
-        <div>
-          <blockquote>
-            ...I was struggling to find the right solution, and once MyCompany came along,
-            I knew all my troubles would go away.
-          </blockquote>
-        </div>
-      </article>
-      <article>
-        <img src="images/girl.jpg" alt="guy" />
-        <div>
-          <blockquote>
-            ...I was struggling to find the right solution, and once MyCompany came along,
-            I knew all my troubles would go away.
-          </blockquote>
-        </div>
-      </article>
-      <article>
-        <img src="images/guy2.jpg" alt="guy" />
-        <div>
-          <blockquote>
-            ...I was struggling to find the right solution, and once MyCompany came along,
-            I knew all my troubles would go away.
-          </blockquote>
-        </div>
-      </article>
+    <section >
+     
     </section>
   </main>
-  <div class="modal">
-    <form>
-      <h1 class="modal-title">Sign up</h1>
-      <label for="email">Email</label>
-      <input id="email" type="text" name="user[email]" />
-      <label for="email">Password</label>
-      <input id="password" type="password" name="user[password]" />
-      <label for="email">Password Confirmation</label>
-      <input id="password-confirmation" type="password" name="user[password_confirmation]" />
-    </form>
-  </div>
-  <div class="body-blackout"></div>
+  
+
   <script src="/packs/bundle.js"></script>
 </body>
 

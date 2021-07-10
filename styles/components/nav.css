@@ -1,0 +1,96 @@
+header {
+
+  background-color: #4c4c4c;
+  background-image: linear-gradient(225deg, #4c4c4c 0%, #000000 50%, #000000 100%);
+  
+  
+
+
+   color: white;
+   position: absolute;
+   padding: 15px 170px;
+   top: 0;
+   margin: 0;
+
+   width: 100%;
+}
+
+.header__box {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.header__box-logo {
+  cursor: pointer;
+  font-size: 45px;
+  font-family: Libre Baskerville,serif;
+  font-weight: 500;
+  padding: 0;
+  margin-right: 250px;
+}
+
+.header__box-content > {
+ 
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  
+
+
+}
+.header__box-content > li {
+  cursor: pointer;
+  display: inline;
+  display: inline-block;
+  list-style: none;
+
+  font-size: 22px;
+  transition: all 0.3 ease;
+  padding: 0 20px;
+  
+  padding-bottom: 5px;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.3s ease;
+ 
+}
+
+.header__box-content > li:hover {
+   color: rgb(243, 243, 243);
+ 
+}
+/* nav link styles & animação */
+.header__box-content-item a {
+  color: inherit;
+ 
+  text-decoration: none;
+ 
+  
+
+}
+
+.header__box-content > li:after {
+  bottom: -5px;
+  background: #f1a6a3;
+  color: #f1a6a3;
+
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  z-index: -1;
+  height: 3px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  
+}
+
+.header__box-content > li:hover:after,
+.header__box-content > li:focus:after,
+.header__box-content > li:active:after {
+  left: 0;
+  right: auto;
+  width: 94%;
+}

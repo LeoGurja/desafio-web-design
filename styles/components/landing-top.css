@@ -1,0 +1,36 @@
+.landing-top__image {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.landing-top__image {
+    position: relative;
+    z-index: -99;
+}
+
+.landing-top__content {
+    color: white;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-40%, -250%);
+    z-index: 99;
+
+}
+
+.landing-top__content-title {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 300;
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.landing-top__content-subtitle {
+    color: white;
+    font-size: 22px;
+    width: 70%;
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}

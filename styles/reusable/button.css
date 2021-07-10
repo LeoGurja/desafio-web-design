@@ -1,0 +1,39 @@
+
+
+.button {
+    box-sizing: border-box;
+   
+    border: none;
+    cursor: pointer;
+   
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    transition: all .4s ease;
+}
+
+.button--primary {
+    color: #FFF;
+    background: black;
+    transition: all .4s ease;
+    
+  
+}
+
+.button--primary:hover {
+    background: rgb(184, 183, 183);
+    color: black;
+}
+
+.button--secondary {
+    color: #494949;
+    background-color: rgb(233, 227, 227);
+    font-size: 14px;
+    padding: 10px 14px;
+}
+
+.button--secondary:hover {
+    background-color: rgb(221, 216, 216);
+}
