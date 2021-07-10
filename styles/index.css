@@ -8,8 +8,11 @@
 @import './components/testimonial.css';
 @import './components/landing-top.css';
 @import './components/services.css';
+@import './components/modal/modal-form.css';
+@import './components/modal/modal.css';
 /* estilos reutilizaveis */
 @import './reusable/button.css';
+@import './reusable/text.css';
 
 
 

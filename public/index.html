@@ -48,16 +48,16 @@
             N sit amet erovitae ex mattis dignissim a nec libero.
             Nam congue luctus nisl, id finibus nisi cursus vitae
           </p>
-          <button type="button" class="button button--primary">Start my journey</button>
+          <button type="button" id="modal-btn" class="button button--primary">Start my journey</button>
       </div>
       
      
     
     </div>
     <section>
-      <div class="services_text-box">
-        <h2 class="services_text-box-title">Principais serviços</h2>
-        <h1 class="services_text-box-subtitle">Veja alguns de nossos serviços</h1>
+      <div class="text">
+        <h2 class="text-title">Principais serviços</h2>
+        <h1 class="text-subtitle">Veja alguns de nossos serviços</h1>
       </div>
       <div class="services_group">
          <div class="services_group-item">
@@ -80,31 +80,95 @@
           <button class="button button--secondary">Veja mais</button>
         </div>
  
-      
-      <div>
+      </section>
+      <section>
       <div class="testimonial">
-        <div class="testimonial__card">
-          <div  class="testimonial__card-text">
-            I was struggling to find the right solution, 
-            and once MyCompany came along, I knew all my troubles would go away.
-            <i class="fas fa-quote-right quote"></i>
+          <div class="text">
+               <h1 class="text-title">Depoimentos</h1>
+               <h2 class="text-subtitle">O que nossos clientes estão dizendo?</h2>
           </div>
-          <div class="testimonial__card-footer">
-            <div class="testimonial__card-img">
-               
+          <div class="testimonial-group">
+            <div class="testimonial__card">
+              <div  class="testimonial__card-text">
+                I was struggling to find the right solution, 
+                and once MyCompany came along, I knew all my troubles would go away.
+                <i class="fas fa-quote-right quote"></i>
+              </div>
+              <div class="testimonial__card-footer">
+                <div class="testimonial__card-img card-img1">
+                  
+                </div>
+                <h5 class="testimonial__card-name">André</h5>
+              </div>
+    
             </div>
-            <h5 class="testimonial__card-name"></h5>
-          </div>
+            <div class="testimonial__card">
+              <div  class="testimonial__card-text ">
+                I was struggling to find the right solution, 
+                and once MyCompany came along, I knew all my troubles would go away.
+                <i class="fas fa-quote-right quote"></i>
+              </div>
+              <div class="testimonial__card-footer">
+                <div class="testimonial__card-img card-img2">
+                  
+                </div>
+                <h5 class="testimonial__card-name">Sumiko</h5>
+              </div>
+    
+            </div>
+            <div class="testimonial__card">
+              <div  class="testimonial__card-text">
+                I was struggling to find the right solution, 
+                and once MyCompany came along, I knew all my troubles would go away.
+                <i class="fas fa-quote-right quote"></i>
+              </div>
+              <div class="testimonial__card-footer">
+                <div class="testimonial__card-img card-img3">
+                  
+                </div>
+                <h3 class="testimonial__card-name">Christine</h3>
+              </div>
+      </div>
+      
 
         </div>
-      </div>
-
+    </section>
+    <div id="app-modal" class="modal">
+      <div class="modal-content">
+          <div class="modal-header">
+            <span class="close-modal">&times;</span>
+            <h2>Cadastro de interessados</h2>
+          </div>
+          <div class="modal-body">
+              <form action="" class="form-content">
+                <ul class="modal-nav">
+                  <li class="modal-nav__item active">
+                    <a href="#">Faça login</a>
+                  </li>
+                  <li class="modal-nav__item">
+                    <a href="#">Criar conta</a>
+                  </li>
+                </ul>
+                <label for="modal-input-user" class="modal-label">Usuário</label>
+                <input id="modal-input-user" class="modal-input" type="text" />
+                <label for="modal-input-password" class="modal-label">Senha</label>
+                <input id="modal-input-password" class="modal-input" type="password" />
+                <label for="modal-input-signup" class="modal-label--checkbox"></label>
+                <input id="modal-input-signup" type="checkbox" class="modal-input--checkbox">
+                  Me mantenha conectado
+                </input>
+                <button class="modal__submit" disabled>Logar</button>
+              
+              </form>
+              <a href="#" class="modal__forgot">Esqueceu sua senha?</a>
+          </div>
         
-    
-    </section>
-    <section >
+
+         
+         
+      </div>
      
-    </section>
+    </div>
   </main>
   
 

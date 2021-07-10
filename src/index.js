@@ -1,25 +1,23 @@
 import '../styles/index.css'
 import '@fortawesome/fontawesome-free/js/all'
 import '@fortawesome/fontawesome-free/css/fontawesome.css'
+// pegar elementos do modal
+const modal = document.getElementById('app-modal');
+const modalBtn = document.getElementById('modal-btn');
+const span = document.getElementsByClassName("close-modal")[0]
 
-window.addEventListener('load', function(event) {
-  document.querySelector('.call-to-action').addEventListener('click', 
-    openModal(document.querySelector('.modal'), document.querySelector('.body-blackout'))
-  )
-})
-
-function openModal(modal, blackout) {
-  return () => {
-    modal.classList.add('visible')
-    blackout.classList.add('visible')
-
-    blackout.onclick = closeModal(modal, blackout)
-  }
+// logica para abrir e fechar modal
+modalBtn.onclick = () => {
+  console.log('test')
+  modal.style.display = 'block'
 }
 
-function closeModal(modal, blackout) {
-  return () => {
-    modal.classList.remove('visible')
-    blackout.classList.remove('visible')
+span.onclick = () => {
+  modal.style.display = 'none'
+}
+/* quando clickar fora do modal, modal fecha */
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none'
   }
 }
