@@ -8,6 +8,9 @@
 @import './components/testimonial.css';
 @import './components/landing-top.css';
 @import './components/services.css';
+/* footer styles */
+@import './components/footer/footer.css';
+/* modal styles */
 @import './components/modal/modal-form.css';
 @import './components/modal/modal.css';
 /* estilos reutilizaveis */

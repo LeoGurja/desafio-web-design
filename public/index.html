@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!-- HEADER -->
   <header class="header">
         <div  class="header__box">
 
@@ -33,7 +34,7 @@
  
    
   </header>
-
+   <!-- PARTE SUPERIOR DA LANDING PAGE -->
   <main>
     <div class="landing-top">
       <div class="landing-top__image">
@@ -54,6 +55,7 @@
      
     
     </div>
+    <!-- PRINCIPAIS SERVIÇOS - MEIO DA LANDING PAGE -->
     <section>
       <div class="text">
         <h2 class="text-title">Principais serviços</h2>
@@ -82,6 +84,7 @@
  
       </section>
       <section>
+      <!-- DEPOIMENTOS DE CLIENTES -->
       <div class="testimonial">
           <div class="text">
                <h1 class="text-title">Depoimentos</h1>
@@ -133,35 +136,30 @@
 
         </div>
     </section>
+    <!-- MODAL -->
     <div id="app-modal" class="modal">
       <div class="modal-content">
-          <div class="modal-header">
-            <span class="close-modal">&times;</span>
-            <h2>Cadastro de interessados</h2>
-          </div>
-          <div class="modal-body">
+         
               <form action="" class="form-content">
                 <ul class="modal-nav">
-                  <li class="modal-nav__item active">
-                    <a href="#">Faça login</a>
+              
+                  <li class="modal-nav__close">
+                    <span class="close-modal">&times;</span>
                   </li>
-                  <li class="modal-nav__item">
-                    <a href="#">Criar conta</a>
-                  </li>
+                  
                 </ul>
                 <label for="modal-input-user" class="modal-label">Usuário</label>
                 <input id="modal-input-user" class="modal-input" type="text" />
                 <label for="modal-input-password" class="modal-label">Senha</label>
                 <input id="modal-input-password" class="modal-input" type="password" />
-                <label for="modal-input-signup" class="modal-label--checkbox"></label>
-                <input id="modal-input-signup" type="checkbox" class="modal-input--checkbox">
-                  Me mantenha conectado
-                </input>
+               
                 <button class="modal__submit" disabled>Logar</button>
+                
+                
               
               </form>
               <a href="#" class="modal__forgot">Esqueceu sua senha?</a>
-          </div>
+         
         
 
          
@@ -170,6 +168,29 @@
      
     </div>
   </main>
+  <!-- FOOTER LAYOUT-->
+  <footer class="footer">
+     <div class="footer__box">
+         <h1 class="footer__logo"></h1>
+         <h2>Contact</h2>
+         <address>
+            7283 Algum lugar no. Mundo Av. 254-23
+            <br>
+            <a class="footer_btn" href="david-example@gmail.com">Email us</a>
+         </address>
+     </div>
+     <ul class="footer__nav">
+          <li class="footer__nav-item">
+             <h2 class="footer__nav-title">Media</h2>
+             <ul class="footer__nav-ul">
+               
+             </ul>
+            
+          </li>
+     </ul>
+
+
+  </footer>
   
 
   <script src="/packs/bundle.js"></script>
