@@ -10,6 +10,9 @@
 @import './components/services.css';
 /* footer styles */
 @import './components/footer/footer.css';
+@import './components/footer/footer-nav.css';
+@import './components/footer/footer-legal.css';
+@import './components/footer/footer-address.css';
 /* modal styles */
 @import './components/modal/modal-form.css';
 @import './components/modal/modal.css';

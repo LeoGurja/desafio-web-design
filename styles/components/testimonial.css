@@ -21,8 +21,8 @@
     flex-flow: column;
     justify-content: space-between;
     min-height: 400px;
-    max-width: 400px;
-    margin: 0 40px;
+    max-width: 320px;
+    margin: 0 30px;
     position: relative;
     z-index: -99;
 }
@@ -45,7 +45,7 @@
 }
 
 
-
+/* posicionar imagem no cartão de depoimento */
 .testimonial__card-img {
  
     border-radius: 50%;
@@ -60,7 +60,7 @@
     position: absolute;
     top: 6%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); 
     justify-content: center;
 
     
@@ -96,6 +96,7 @@
     color: #4D3FA3;
 }
 
+/* posicionar do client no cartão de depoimento */
 .testimonial__card-name {
     color: white;
     position: absolute;

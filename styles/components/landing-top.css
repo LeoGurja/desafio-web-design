@@ -7,7 +7,7 @@
 
 .landing-top__image {
     position: relative;
-    z-index: -99;
+    z-index: -99; 
 }
 
 .landing-top__content {
@@ -15,7 +15,7 @@
     position: relative;
     top: 5%;
     left: 50%;
-    transform: translate(-40%, -250%);
+    transform: translate(-40%, -250%); /* posicionar texto em cima da image */
  
 
 }

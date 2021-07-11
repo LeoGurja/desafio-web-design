@@ -1,0 +1,62 @@
+/* layout geral do footer */
+
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;;
+    display: flex;
+    color:  #2f2f2f;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    font-size: 100%;
+    margin-top: 150px;
+}
+/* extender elementos do footer */
+.footer > * {
+    flex: 1 100%;
+}
+
+.footer address {
+    font-style: normal;
+    color: #999;
+}
+
+/* estilos de formatação de texto para elementos do footer */
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+/* responsividade */
+@media screen and (min-width: 25.375em) {
+    .footer__legal .footer__legal-links {
+        margin-left: auto;
+    }
+   }
+   
+   @media screen and (min-width: 40.375em) {
+       .footer__nav > * {
+           flex: 1;
+       }
+   
+       .footer__nav-item--extra {
+           flex-grow: 2;
+       }
+   
+       .footer__address {
+           flex: 1 0px;
+       }
+   
+       .footer__nav {
+           flex: 2 0px;
+       }
+      }
