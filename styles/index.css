@@ -5,10 +5,11 @@
 
 
 /* estilos de componentes a partir da ordem de layout */
-@import './components/nav.css';
+@import './components/header.css';
 @import './components/landing-top.css';
 @import './components/services.css';
 @import './components/products/products.css';
+@import './components/products/products-animation.css';
 @import './components/testimonial.css';
 /* footer styles */
 @import './components/footer/footer.css';
