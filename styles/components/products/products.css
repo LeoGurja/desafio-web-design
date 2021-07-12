@@ -1,5 +1,5 @@
 .products {
-    margin: 200px 0;
+    margin: 290px 0;
 }
 
 
@@ -21,8 +21,11 @@
     margin: 10px;
     background-color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
    
 }
+
+
 
 /* animações ao ativar hover no card */
 .products__card:hover .products__card-caption {
@@ -45,12 +48,16 @@
     margin: 20px 0;
 }
 
+
 .products__card-thumb {
     position: relative;
-    max-height: 300px;
+    max-height: 280px;
     overflow: hidden;
 }
 
+.products__card:hover {
+    transform: translateY(-5%);
+}
 
 .products__card-thumb::after {
     background: linear-gradient(0deg, rgba(0, 0, 0, .5), 40%, rgba(255, 255, 255, 0) 100%);
@@ -151,5 +158,13 @@
 @media (min-width: 1024px) {
     .products__card-thumb {
         max-height: 500px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .products__group {
+        grid-template-columns: 400px;
+        grid-template-rows: repeat(3, 300px);
+        grid-gap: 20px 0;
     }
 }
