@@ -29,10 +29,8 @@
  
   animation-name: animatetop;
   animation-duration: 0.4s;
-  background-image: url(https://images.unsplash.com/photo-1594279689140-67b7be5ef065?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGF1dG9tb2JpbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  
+  background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 1px solid #888;
   max-height: 650px;
@@ -46,12 +44,7 @@
 
 
 .modal-content:after {
-  background-image: radial-gradient(
-    ellipse at left bottom,
-    rgb(136, 133, 133) 0%,
-    rgba(29, 28, 29, 0.9) 59%,
-    rgba(3, 3, 3, 0.9) 100%
-  );
+ 
   box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);
   content: "";
   display: inline-block;
@@ -70,12 +63,8 @@
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
-/* modal nav */
-.modal-nav {
-  position: relative;
-  padding: 0;
-  margin: 0 0 4em 1rem;
-}
+
+
 
 
 
@@ -84,7 +73,7 @@
 
 /* modal close styles */
 .modal-nav__close {
-  color: rgb(231, 225, 225);
+  color: black;
    cursor: pointer;
   float: right;
   font-size: 42px;
@@ -92,7 +81,7 @@
 
 .modal-nav__close:hover,
 .modal-nav__close:focus {
-  color: white;
+  color: rgb(46, 45, 45);
 
 }
 

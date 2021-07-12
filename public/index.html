@@ -12,7 +12,7 @@
 <body>
   <!-- HEADER -->
   <header class="header">
-        <div  class="header__box">
+        <div  class="header__box show-for-desktop">
 
             <h1 class="header__box-logo">My Company</h1>
             <ul class="header__box-content">
@@ -28,7 +28,17 @@
               <li class="header__box-content-item">
                 <a href="#">Contato</a>
               </li>
+              <li class="header__box-content-item">
+                  <i class="fab fa-instagram"></i>
+              </li>
+              <li class="header__box-content-item">
+                <i class="fab fa-facebook-f"></i>
+            </li>
             </ul>
+            
+        </div>
+        <div class="show-for-mobile">
+          <i class="fad fa-bars"></i>
         </div>
         
  
@@ -82,6 +92,80 @@
           <button class="button button--secondary">Veja mais</button>
         </div>
  
+      </section>
+      <!-- AMOSTRA DE PRODUTOS -->
+      <section class="products">
+        <div class="text">
+          <h1 class="text-title">Peças de carro</h1>
+          <h2 class="text-subtitle">Peça modernas e com selo de qualidade</h2>
+        </div>
+        <div class="products__group">
+            <div class="products__card">
+              <figure class="products__card-thumb">
+                <img 
+                src="https://images.unsplash.com/photo-1611633859589-7990d2fbb56b?ixid=Mnw
+                xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" 
+                alt="Pneus" class="products__card_image"
+                >
+                <figcaption class="products__card-caption">
+                  <h2 class="products__card-title">Tires 195/65r15</h2>
+                  <p class="products__card-snippet">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur fringilla turpis est, eget posuere libero pharetra a.
+                    Curabitur vulputate daps magna. Integer vehicula tellus vel purus ultrices sagittis.
+                  </p>
+                  <a href="" class="products__card-button">Read more</a>
+                </figcaption>
+    
+              </figure>
+            </div>
+        </div>
+                    <!-- PRODUTO 2 -->
+        <div class="products__group">
+          <div class="products__card">
+            <figure class="products__card-thumb">
+              <img 
+                src="https://images.unsplash.com/photo-1598859159221-1fffc50b4932?ixid=MnwxM
+                jA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" 
+                alt="Pneus" class="products__card_image"
+                >
+              <figcaption class="products__card-caption">
+                <h2 class="products__card-title">Internal Design</h2>
+                <p class="products__card-snippet">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur fringilla turpis est, eget posuere libero pharetra a.
+                  Curabitur vulputate daps magna. Integer vehicula tellus vel purus ultrices sagittis.
+                </p>
+                <a href="" class="products__card-button">Read more</a>
+              </figcaption>
+  
+            </figure>
+          </div>
+        </div>
+                         <!-- PRODUTO 3 -->
+        <div class="products__group">
+                          <div class="products__card">
+                            <figure class="products__card-thumb">
+                              <img 
+                              src="https://images.unsplash.com/photo-1556448851-9359658faa54?ixi
+                              d=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8f
+                              GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" 
+                              alt="Pneus" class="products__card_image"
+                              >
+                              <figcaption class="products__card-caption">
+                                <h2 class="products__card-title">Light System Design</h2>
+                                <p class="products__card-snippet">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                  Curabitur fringilla turpis est, eget posuere libero pharetra a.
+                                  Curabitur vulputate daps magna. Integer vehicula tellus vel purus ultrices sagittis.
+                                </p>
+                                <a href="" class="products__card-button">Read more</a>
+                              </figcaption>
+                  
+                            </figure>
+                          </div>
+         </div>
+        
       </section>
       <section>
       <!-- DEPOIMENTOS DE CLIENTES -->
@@ -149,9 +233,16 @@
                   
                 </ul>
                 <label for="modal-input-user" class="modal-label">Usuário</label>
-                <input id="modal-input-user" class="modal-input" type="text" />
-                <label for="modal-input-password" class="modal-label">Senha</label>
-                <input id="modal-input-password" class="modal-input" type="password" />
+                <input id="modal-input-user" class="modal-input" type="text" 
+                placeholder="Insira seu nome de usuário..."/>
+
+                <label for="modal-input-password" class="modal-label" >Senha</label>
+                <input id="modal-input-password" class="modal-input" type="password" 
+                placeholder="Insira sua senha..."/>
+
+                <label for="modal-input-password2" class="modal-label" >Confirmar Senha</label>
+                <input id="modal-input-password2" class="modal-input" type="password" 
+                placeholder="Confirme sua senha..."/>
                
                 <button class="modal__submit" disabled>Logar</button>
                 

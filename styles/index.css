@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
-
+/* fonte header */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap');
 
 
 /* estilos de componentes a partir da ordem de layout */
 @import './components/nav.css';
-@import './components/testimonial.css';
 @import './components/landing-top.css';
 @import './components/services.css';
+@import './components/products/products.css';
+@import './components/testimonial.css';
 /* footer styles */
 @import './components/footer/footer.css';
 @import './components/footer/footer-nav.css';
@@ -19,6 +21,7 @@
 /* estilos reutilizaveis */
 @import './reusable/button.css';
 @import './reusable/text.css';
+@import './reusable/visibility.css';
 
 
 
