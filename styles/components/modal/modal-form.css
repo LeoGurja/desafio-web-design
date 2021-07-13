@@ -1,0 +1,84 @@
+.modal-label {
+    display: block;
+    padding-left: 1rem;
+}
+
+.modal-label {
+    color: black;
+    text-transform: uppercase;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.modal-input {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgb(65, 64, 64);
+    font-size: 1.15rem;
+    width: 60%;
+    padding: .5rem 1rem;
+    border: 2px solid rgb(46, 46, 46);
+    outline: none;
+    border-radius: 1.5rem;
+  
+    background-color: rgba(255, 255, 255, 0.25);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+   
+}
+
+.modal-input:hover,
+.modal-input:focus {
+    color: black;
+    border: 2px solid rgba(26, 25, 25, 0.5);
+    background-color: transparent;
+}
+
+.modal-input + .modal-label {
+    margin-top: 1.5rem;
+}
+
+.modal-input--checkbox {
+    position: absolute;
+    top: .1rem;
+    left: 0;
+    margin: 0;
+}
+
+.modal__submit {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2.5rem;
+    padding: .75rem;
+   
+    display: block;
+    width: 20%;
+    transition: all .3s ease;
+}
+
+.modal__forgot {
+    display: block;
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease;
+}
+
+.modal__forgot:hover {
+    color: rgb(214, 211, 211);
+}
+
+.modal__submit:hover {
+    background-color: rgb(32, 32, 32);
+}

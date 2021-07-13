@@ -1,0 +1,21 @@
+.footer__nav-title {
+   
+    font-size: 15px;
+    font-weight: 400;
+}
+/* dividir grupos de navegação do footer 3 colunas */
+.footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.footer__nav > * {
+    flex: 1 50%;
+    margin: 1.25em;
+}
+
+.footer__nav-ul a {
+    color: #999;
+}
+

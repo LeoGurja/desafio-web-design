@@ -1,0 +1,13 @@
+
+.footer__legal {
+    color: #999;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__legal-links {
+    align-items: center;
+    display: flex;
+}
+
+

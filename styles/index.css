@@ -1,22 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+/* fonte header */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap');
 
-@import './header.css';
-@import './modal.css';
-@import './nav.css';
-@import './services.css';
-@import './testimonials.css';
+
+/* estilos de componentes a partir da ordem de layout */
+@import './components/header.css';
+@import './components/landing-top.css';
+@import './components/services.css';
+@import './components/products/products.css';
+@import './components/products/products-animation.css';
+@import './components/testimonial.css';
+/* footer styles */
+@import './components/footer/footer.css';
+@import './components/footer/footer-nav.css';
+@import './components/footer/footer-legal.css';
+@import './components/footer/footer-address.css';
+/* modal styles */
+@import './components/modal/modal-form.css';
+@import './components/modal/modal.css';
+/* estilos reutilizaveis */
+@import './reusable/button.css';
+@import './reusable/text.css';
+@import './reusable/visibility.css';
+
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Crimson Text', serif;
-}
+  overflow-x: hidden;
 
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  
 }
-

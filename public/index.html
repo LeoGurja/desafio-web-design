@@ -10,113 +10,347 @@
 </head>
 
 <body>
-  <nav>
-    <h1 class="nav-logo">My Company</h1>
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Serviços</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">FAQ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contato</a>
-      </li>
-    </ul>
-  </nav>
+  <!-- HEADER -->
+  <header class="header">
+        <div  class="header__box show-for-desktop">
 
+            <h1 class="header__box-logo">My Company</h1>
+            <ul class="header__box-content">
+              <li class="header__box-content-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="header__box-content-item">
+                <a href="#">Serviços</a>
+              </li>
+              <li class="header__box-content-item">
+                <a href="#">FAQ</a>
+              </li>
+              <li class="header__box-content-item">
+                <a href="#">Contato</a>
+              </li>
+              <li class="header__box-content-item">
+                  <i class="fab fa-instagram"></i>
+              </li>
+              <li class="header__box-content-item">
+                <i class="fab fa-facebook-f"></i>
+            </li>
+            </ul>
+            
+        </div>
+        <div class="show-for-mobile">
+          <i class="fad fa-bars"></i>
+        </div>
+        
+ 
+   
+  </header>
+   <!-- PARTE SUPERIOR DA LANDING PAGE -->
   <main>
-    <header>
-      <h1 class="header-title">The road less traveled</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur fringilla turpis est, eget posuere libero pharetra a.
-        Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-        Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-        Nam congue luctus nisl, id finibus nisi cursus vitae
-      </p>
-      <img class="header-image" src="images/car.png" alt="car" />
-      <button type="button" class="call-to-action">Start my journey</button>
-    </header>
-    <section class="services">
-      <div>
-        <i class="far fa-calendar-alt"></i>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur fringilla turpis est, eget posuere libero pharetra a.
-          Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-          Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-          Nam congue luctus nisl, id finibus nisi cursus vitae
-        </p>
+    <div class="landing-top">
+      <div class="landing-top__image">
+          <img width="100%"  src="images/homeimg.jpg" alt="Carro Ilustrativo" />
       </div>
-      <div>
-        <img src="images/lock.png" alt="lock" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur fringilla turpis est, eget posuere libero pharetra a.
-          Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-          Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-          Nam congue luctus nisl, id finibus nisi cursus vitae
-        </p>
+      <div class="landing-top__content">
+          <h1 class="landing-top__content-title">The road less traveled</h1>
+          <p class="landing-top__content-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur fringilla turpis est, eget posuere libero pharetra a.
+            Curabitur vulputate daps magna. Integer vehicula tellus vel purus ultrices sagittis.
+            N sit amet erovitae ex mattis dignissim a nec libero.
+            Nam congue luctus nisl, id finibus nisi cursus vitae
+          </p>
+          <button type="button" id="modal-btn" class="button button--primary">Start my journey</button>
       </div>
-      <div>
-        <img src="images/like.png" alt="thumbs up" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur fringilla turpis est, eget posuere libero pharetra a.
-          Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-          Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-          Nam congue luctus nisl, id finibus nisi cursus vitae
-        </p>
+      
+     
+    
+    </div>
+    <!-- PRINCIPAIS SERVIÇOS - MEIO DA LANDING PAGE -->
+    <section>
+      <div class="text">
+        <h2 class="text-title">Principais serviços</h2>
+        <h1 class="text-subtitle">Veja alguns de nossos serviços</h1>
       </div>
+      <div class="services_group">
+         <div class="services_group-item">
+         
+            <img src="images/services-fixing.png" alt="Reparos - imagem ilustrativa" />
+            <h1>Reparação</h1>
+            <button class="button button--secondary">Veja mais</button>
+         </div>
+         <div class="services_group-item">
+
+          <img src="images/services-sales.png" alt="Venda de carros - imagem ilustrativa" />
+          <h1>Venda de automóveis</h1>
+          <button class="button button--secondary">Veja mais</button>
+        </div>
+        <div class="services_group-item">
+
+          <img src="images/services-paint.png" alt="Pintura automotiva - imagem ilustrativa" />
+          <h1>Pintura</h1>
+          
+          <button class="button button--secondary">Veja mais</button>
+        </div>
+ 
+      </section>
+      <!-- AMOSTRA DE PRODUTOS -->
+      <section class="products">
+        <div class="text">
+          <h1 class="text-title">Peças de carro</h1>
+          <h2 class="text-subtitle">Peça modernas e com selo de qualidade</h2>
+        </div>
+        <div class="products__group">
+            <!-- PRODUTO 1 -->
+            <div class="products__card">
+              <figure class="products__card-thumb">
+                <img 
+                src="https://images.unsplash.com/photo-1611633859589-7990d2fbb56b?ixid=Mnw
+                xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" 
+                alt="Pneus" class="products__card_image"
+                >
+                <figcaption class="products__card-caption">
+                  <h2 class="products__card-title">Tires 195/65r15</h2>
+                  <p class="products__card-snippet">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur fringilla turpis est, eget posuere libero pharetra a.
+                    Curabitur vulputate daps magna. Integer vehicula tellus vel purus ultrices sagittis.
+                  </p>
+                  <a href="" class="products__card-button">Read more</a>
+                </figcaption>
+    
+              </figure>
+            </div>
+        
+          <!-- PRODUTO 2 -->
+          <div class="products__card">
+            <figure class="products__card-thumb">
+              <img 
+                src="https://images.unsplash.com/photo-1598859159221-1fffc50b4932?ixid=MnwxM
+                jA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" 
+                alt="Pneus" class="products__card_image"
+                >
+              <figcaption class="products__card-caption">
+                <h2 class="products__card-title">Interior design</h2>
+                <p class="products__card-snippet">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur fringilla turpis est, eget posuere libero pharetra a.
+                  Curabitur vulputate daps magna. Integer vehicula tellus vel purus ultrices sagittis.
+                </p>
+                <a href="" class="products__card-button">Read more</a>
+              </figcaption>
+  
+            </figure>
+          </div>
+ 
+          <!-- PRODUTO 3 -->
+          <div class="products__card">
+                <figure class="products__card-thumb">
+                      <img 
+                      src="https://images.unsplash.com/photo-1556448851-9359658faa54?ixi
+                      d=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8f
+                              GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" 
+                      alt="Pneus" class="products__card_image"
+                      >
+                          <figcaption class="products__card-caption">
+                                <h2 class="products__card-title">Light System Design</h2>
+                                <p class="products__card-snippet">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                  Curabitur fringilla turpis est, eget posuere libero pharetra a.
+                                  Curabitur vulputate daps magna. Integer vehicula tellus vel p
+                                  urus ultrices sagittis.
+                                </p>
+                                <a href="" class="products__card-button">Read more</a>
+                          </figcaption>
+                  
+                </figure>
+                          </div>
+        </div>
+         
+        
+      </section>
+      <section>
+      <!-- DEPOIMENTOS DE CLIENTES -->
+      <div class="testimonial">
+          <div class="text">
+               <h1 class="text-title">Depoimentos</h1>
+               <h2 class="text-subtitle">O que nossos clientes estão dizendo?</h2>
+          </div>
+          <div class="testimonial-group">
+            <div class="testimonial__card">
+              <div  class="testimonial__card-text">
+                I was struggling to find the right solution, 
+                and once MyCompany came along, I knew all my troubles would go away.
+                <i class="fas fa-quote-right quote"></i>
+              </div>
+              <div class="testimonial__card-footer">
+                <div class="testimonial__card-img card-img1">
+                  
+                </div>
+                <h5 class="testimonial__card-name">André</h5>
+              </div>
+    
+            </div>
+            <div class="testimonial__card">
+              <div  class="testimonial__card-text ">
+                I was struggling to find the right solution, 
+                and once MyCompany came along, I knew all my troubles would go away.
+                <i class="fas fa-quote-right quote"></i>
+              </div>
+              <div class="testimonial__card-footer">
+                <div class="testimonial__card-img card-img2">
+                  
+                </div>
+                <h5 class="testimonial__card-name">Sumiko</h5>
+              </div>
+    
+            </div>
+            <div class="testimonial__card">
+              <div  class="testimonial__card-text">
+                I was struggling to find the right solution, 
+                and once MyCompany came along, I knew all my troubles would go away.
+                <i class="fas fa-quote-right quote"></i>
+              </div>
+              <div class="testimonial__card-footer">
+                <div class="testimonial__card-img card-img3">
+                  
+                </div>
+                <h3 class="testimonial__card-name">Christine</h3>
+              </div>
+      </div>
+      
+
+        </div>
     </section>
-    <section class="testimonials">
-      <h1>Testimonials</h1>
-      <article>
-        <img src="images/guy1.jpg" alt="guy" />
-        <div>
-          <blockquote>
-            ...I was struggling to find the right solution, and once MyCompany came along,
-            I knew all my troubles would go away.
-          </blockquote>
-        </div>
-      </article>
-      <article>
-        <img src="images/girl.jpg" alt="guy" />
-        <div>
-          <blockquote>
-            ...I was struggling to find the right solution, and once MyCompany came along,
-            I knew all my troubles would go away.
-          </blockquote>
-        </div>
-      </article>
-      <article>
-        <img src="images/guy2.jpg" alt="guy" />
-        <div>
-          <blockquote>
-            ...I was struggling to find the right solution, and once MyCompany came along,
-            I knew all my troubles would go away.
-          </blockquote>
-        </div>
-      </article>
-    </section>
+    <!-- MODAL -->
+    <div id="app-modal" class="modal">
+      <div class="modal-content">
+         
+              <form action="" class="form-content">
+                <ul class="modal-nav">
+              
+                  <li class="modal-nav__close">
+                    <span class="close-modal">&times;</span>
+                  </li>
+                  
+                </ul>
+                <label for="modal-input-user" class="modal-label">Usuário</label>
+                <input id="modal-input-user" class="modal-input" type="text" 
+                placeholder="Insira seu nome de usuário..."/>
+
+                <label for="modal-input-password" class="modal-label" >Senha</label>
+                <input id="modal-input-password" class="modal-input" type="password" 
+                placeholder="Insira sua senha..."/>
+
+                <label for="modal-input-password2" class="modal-label" >Confirmar Senha</label>
+                <input id="modal-input-password2" class="modal-input" type="password" 
+                placeholder="Confirme sua senha..."/>
+               
+                <button class="modal__submit" disabled>Criar conta</button>
+                
+                
+              
+              </form>
+              <a href="#" class="modal__forgot">Esqueceu sua senha?</a>
+         
+        
+
+         
+         
+      </div>
+     
+    </div>
   </main>
-  <div class="modal">
-    <form>
-      <h1 class="modal-title">Sign up</h1>
-      <label for="email">Email</label>
-      <input id="email" type="text" name="user[email]" />
-      <label for="email">Password</label>
-      <input id="password" type="password" name="user[password]" />
-      <label for="email">Password Confirmation</label>
-      <input id="password-confirmation" type="password" name="user[password_confirmation]" />
-    </form>
+  
+  
+
+    
+  
+  <!-- FOOTER LAYOUT-->
+  <div class="pre-footer">
+      <footer class="footer">
+        <div class="footer__address">
+            <h1 class="footer__logo"></h1>
+            <h2>Contact</h2>
+            <address>
+              7283 Algum lugar no. Mundo Av. 254-23
+              <br>
+              <a class="footer__btn" href="david-example@gmail.com">Email us</a>
+            </address>
+        </div>
+        <ul class="footer__nav">
+            <li class="footer__nav-item">
+                <h2 class="footer__nav-title">Media</h2>
+                <ul class="footer__nav-ul">
+                  <li>
+                    <a href="#">Online</a>
+                  </li>
+                  <li>
+                  <a href="#">Print</a>
+                  </li>
+                  <li>
+                    <a href="#">Alternative Ads</a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+            <li class="footer__nav-item footer__nav-item--extra">
+                <h2 class="footer__nav-title">Tecnologia</h2>
+                <ul class="footer__nav-ul footer__nav-ul--extra">
+                    <li>
+                      <a href="#">Hardware Design</a>
+                    </li>
+                    <li>
+                    <a href="#">Software Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Digital Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Automation</a>
+                    </li>
+                    <li>
+                      <a href="#">Artificial Intelligence</a>
+                    </li>
+                    <li>
+                      <a href="#">IoT</a>
+                    </li>
+  
+                </ul>
+  
+            </li>
+            <li class="footer__nav-item">
+              <h2 class="footer__nav-title">Legal</h2>
+              <ul class="footer__nav-ul">
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                <a href="#">Terms of Use</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap</a>
+                </li>
+  
+              </ul>
+  
+            </li>
+        </ul>
+        <div class="footer__legal">
+          <p>&copy; 2021 My Company. All rights reserved.</p>
+          <div class="footer__legal-links">
+                <span>Developed by João Vitor Alves Estrella</span>
+          </div>
+        </div>
+ 
+ 
+   </footer>
   </div>
-  <div class="body-blackout"></div>
+  
+  
+
   <script src="/packs/bundle.js"></script>
+  
 </body>
 
 </html>
